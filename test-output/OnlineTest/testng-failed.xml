@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [OnlineTest]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="Test.TestListener"/>
+  </listeners>
+  <test thread-count="5" name="KPMGTEST(failed)">
+    <classes>
+      <class name="Test.E2EJohnLewisNavigation">
+        <methods>
+          <include name="VerifyHomePage"/>
+          <include name="tearup"/>
+          <include name="verifyReviewPage"/>
+          <include name="intializedriver"/>
+        </methods>
+      </class> <!-- Test.E2EJohnLewisNavigation -->
+    </classes>
+  </test> <!-- KPMGTEST(failed) -->
+</suite> <!-- Failed suite [OnlineTest] -->
